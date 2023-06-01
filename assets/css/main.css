@@ -18,9 +18,9 @@
 
 /* Colors */
 :root {
-  --color-default: #364d59;
+  --color-default: #5d696e;
   --color-primary: #9c1111;
-  --color-secondary: #52565e;
+  --color-secondary: #000000;
 }
 
 /* Smooth scroll behavior */
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #b9baaf;
+  color: #a7a7a3;
   text-decoration: none;
 }
 
@@ -189,7 +189,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #b3b3ac; 
   color: #fff;
 }
 
