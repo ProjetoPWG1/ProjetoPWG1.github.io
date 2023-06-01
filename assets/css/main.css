@@ -807,8 +807,8 @@ section {
 }
 
 .same-size-image {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -819,10 +819,6 @@ section {
 
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
 
 /*--------------------------------------------------------------
 # Features Section
