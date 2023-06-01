@@ -1062,13 +1062,13 @@ section {
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: #9c1111;
   margin: 0 1px;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #ffd565;
+  color: #9c1111;
   font-size: 26px;
   line-height: 0;
 }
@@ -1532,7 +1532,7 @@ section {
 }
 
 .project-details .portfolio-info .btn-visit:hover {
-  background: #ffc019;
+  background: #e8e7e5;
 }
 
 .project-details .portfolio-description h2 {
