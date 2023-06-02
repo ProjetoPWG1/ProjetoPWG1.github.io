@@ -620,7 +620,7 @@ section {
 
 .get-started .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #c18787;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -634,7 +634,7 @@ section {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #059652;
-  border-top-color: #fff;
+  border-top-color: #c18787;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -664,13 +664,13 @@ section {
   background: var(--color-primary);
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color:#c18787
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(255, 253, 247, 0.8);
+  background: rgba(114, 111, 102, 0.8);
 }
 
 @-webkit-keyframes animate-loading {
