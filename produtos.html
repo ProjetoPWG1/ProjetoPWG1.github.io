@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dona Olinda - Produtos</title>
+  <title>UpConstruction Bootstrap Template - Projects</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,7 +46,6 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logosmall.svg" alt="">
         <h1>Dona Olinda<span>.</span></h1>
       </a>
@@ -61,6 +60,26 @@
           <li><a href="produtos.html" class="active">Produtos</a></li>
           <li><a href="contactos.html">Contactos</a></li>
           <li><a href="carrinho.html">Carrinho</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -70,20 +89,20 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('data:image/jpeg;base64,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');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>Produtos</h2>
         <ol>
-          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="index.html">Home</a></li>
           <li>Produtos</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Produtos Section ======= -->
-    <section id="produtos" class="produtos">
+    <!-- ======= Our Projects Section ======= -->
+    <section id="produtos" class="projects">
       <div class="container" data-aos="fade-up">
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -91,21 +110,21 @@
 
           <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-Tinto">Tinto</li>
-            <li data-filter=".filter-Branco">Branco</li>
-            <li data-filter=".filter-Verde">Verde</li>
-            <li data-filter=".filter-Rose">Rose</li>
+            <li data-filter=".filter-remodeling">Remodeling</li>
+            <li data-filter=".filter-construction">Construction</li>
+            <li data-filter=".filter-repairs">Repairs</li>
+            <li data-filter=".filter-design">Design</li>
           </ul><!-- End Projects Filters -->
 
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Tinto">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="https://estadoliquido.pt/4290-large_default/vinho-tinto-papa-figos-casa-ferreirinha-magnum-15-lt.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/remodeling-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Papa Figos</h4>
+                  <h4>Remodeling 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://estadoliquido.pt/4290-large_default/vinho-tinto-papa-figos-casa-ferreirinha-magnum-15-lt.jpg" title="Papa Figos"
+                  <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1"
                     data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -114,13 +133,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Tinto">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="https://estadoliquido.pt/7150-large_default/vinho-tinto-crasto-superior-double-grande-formato.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/construction-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Crasto</h4>
+                  <h4>Construction 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://estadoliquido.pt/7150-large_default/vinho-tinto-crasto-superior-double-grande-formato.jpg" title="Crasto"
+                  <a href="assets/img/projects/construction-1.jpg" title="Construction 1"
                     data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -129,13 +148,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Tinto">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
               <div class="portfolio-content h-100">
-                <img src="https://adegga.com/wp-content/uploads/2021/12/vinho-altano-magnum-tinto-caixa.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Alto Magnum</h4>
+                  <h4>Repairs 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://adegga.com/wp-content/uploads/2021/12/vinho-altano-magnum-tinto-caixa.jpg" title="Alto Magnum" data-gallery="portfolio-gallery-repairs"
+                  <a href="assets/img/projects/repairs-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -143,13 +162,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Branco">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="https://portugalgetwine.com/1278-large_default/adega-de-pegoes-vinho-branco.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Pegões</h4>
+                  <h4>Design 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://portugalgetwine.com/1278-large_default/adega-de-pegoes-vinho-branco.jpg" title="Pegões" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/projects/design-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -157,13 +176,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Branco">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="https://cdnx.jumpseller.com/finos-segredos/image/15198882/QtPedra_magnum.jpg?1628760722" class="img-fluid" alt="">
+                <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Quinta da Pedra</h4>
+                  <h4>Remodeling 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://cdnx.jumpseller.com/finos-segredos/image/15198882/QtPedra_magnum.jpg?1628760722" title="Quinta da Pedra"
+                  <a href="assets/img/projects/remodeling-2.jpg" title="Remodeling 2"
                     data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -172,13 +191,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Branco">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="https://www.continente.pt/on/demandware.static/-/Sites-col-master-catalog/default/dw5070d70e/images/col/242/2429223-frente.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Cabriz</h4>
+                  <h4>Construction 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://www.continente.pt/on/demandware.static/-/Sites-col-master-catalog/default/dw5070d70e/images/col/242/2429223-frente.jpg" title="Cabriz"
+                  <a href="assets/img/projects/construction-2.jpg" title="Construction 2"
                     data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -187,13 +206,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Verde">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
               <div class="portfolio-content h-100">
-                <img src="https://down-br.img.susercontent.com/file/a0ae45039af15fce333bfc83b8380f0b" class="img-fluid" alt="">
+                <img src="assets/img/projects/repairs-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Casal Garcia</h4>
+                  <h4>Repairs 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://down-br.img.susercontent.com/file/a0ae45039af15fce333bfc83b8380f0b" title="Casal Garcia" data-gallery="portfolio-gallery-repairs"
+                  <a href="assets/img/projects/repairs-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -201,13 +220,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Verde">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="https://estadoliquido.pt/6757-large_default/vinho-verde-branco-aveleda-fonte.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Aveleda</h4>
+                  <h4>Design 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://estadoliquido.pt/6757-large_default/vinho-verde-branco-aveleda-fonte.jpg" title="Aveleda" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/projects/design-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -215,13 +234,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Verde">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="https://estadoliquido.pt/6724-large_default/arca-nova-vinho-verde-branco.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Arca Nova</h4>
+                  <h4>Remodeling 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://estadoliquido.pt/6724-large_default/arca-nova-vinho-verde-branco.jpg" title="Arca Nova"
+                  <a href="assets/img/projects/remodeling-3.jpg" title="Remodeling 3"
                     data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -230,13 +249,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Rose">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="https://www.continente.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw1893309a/images/col/617/6175055-frente.jpg?sw=2000&sh=2000" class="img-fluid" alt="">
+                <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Guarda Rios</h4>
+                  <h4>Construction 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://www.continente.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw1893309a/images/col/617/6175055-frente.jpg?sw=2000&sh=2000" title="Guarda Rios"
+                  <a href="assets/img/projects/construction-3.jpg" title="Construction 3"
                     data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
@@ -245,13 +264,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Rose">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
               <div class="portfolio-content h-100">
-                <img src="https://18666.cdn.simplo7.net/static/18666/sku/vinho-rose-vinho-dom-candido-autentico-rose-seco-750ml--p-1617916682725.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/repairs-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Dom Candido</h4>
+                  <h4>Repairs 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://18666.cdn.simplo7.net/static/18666/sku/vinho-rose-vinho-dom-candido-autentico-rose-seco-750ml--p-1617916682725.jpg" title="Dom Candido" data-gallery="portfolio-gallery-repairs"
+                  <a href="assets/img/projects/repairs-3.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -259,13 +278,13 @@
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-Rose">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="https://vivaovinho.shop/wp/wp-content/uploads/2020/04/imagem-produto-5.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/design-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Maestro</h4>
+                  <h4>Design 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://vivaovinho.shop/wp/wp-content/uploads/2020/04/imagem-produto-5.png" title="Maestro" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/projects/design-3.jpg" title="Repairs 3" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
@@ -291,7 +310,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>Dona Olinda</h3>
+              <h3>UpConstruction</h3>
               <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
@@ -310,16 +329,16 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Página inicial</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Serviços</h4>
+            <h4>Our Services</h4>
             <ul>
               <li><a href="#">Web Design</a></li>
               <li><a href="#">Web Development</a></li>
@@ -358,7 +377,7 @@
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Dona Olinda</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
