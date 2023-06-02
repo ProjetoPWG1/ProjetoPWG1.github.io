@@ -669,7 +669,7 @@ section {
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: rgba(255, 253, 247, 0.8);
 }
 
 @-webkit-keyframes animate-loading {
