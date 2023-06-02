@@ -63,12 +63,6 @@ h6 {
 .emphasized { 
   font-family: var(--font-hand);
   font-style: italic; }
-
-  .biglogo {
-    height: 200px
-    width=200px
-    ;
-  }
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
