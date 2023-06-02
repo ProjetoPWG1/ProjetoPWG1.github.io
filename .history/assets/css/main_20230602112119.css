@@ -691,7 +691,7 @@ section {
   background: var(--color-primary);
   border: 0;
   padding: 10px 30px;
-  color:#c18787;
+  color:#c18787
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -838,6 +838,7 @@ section {
   width: 600px;
   height: 400px;
 }
+
 
 /*--------------------------------------------------------------
 # Features Section
