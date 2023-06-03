@@ -648,7 +648,7 @@ section {
 
 .get-started .php-email-form .loading {
   display: none;
-  background: #c18787;
+  background: #ece7e7;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -662,7 +662,7 @@ section {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #059652;
-  border-top-color: #c18787;
+  border-top-color: #e2dcdc;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -692,7 +692,7 @@ section {
   background: var(--color-primary);
   border: 0;
   padding: 10px 30px;
-  color:#c18787;
+  color:rgb(255, 255, 255);
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -2034,7 +2034,7 @@ section {
   background: none;
   font-size: 26px;
   line-height: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(225, 224, 224, 0.2);
   color: rgba(255, 255, 255, 0.6);
   border-radius: 50px;
   width: 54px;
