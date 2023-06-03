@@ -210,27 +210,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
-
-
-// Seleciona o campo de entrada de data
-var dateInput = document.getElementById('alt-services');
-
-// Define a data mínima como o primeiro dia de agosto
-var minDate = new Date();
-minDate.setMonth(7); // 7 representa agosto, pois os meses são indexados de 0 a 11
-minDate.setDate(1); // Define o dia como 1º
-
-// Define a data máxima como o último dia de agosto
-var maxDate = new Date();
-maxDate.setMonth(8); // 8 representa setembro
-maxDate.setDate(0); // Define o dia como 0 para obter o último dia do mês anterior
-
-// Converte as datas para o formato adequado
-var minDateString = minDate.toISOString().split('T')[0];
-var maxDateString = maxDate.toISOString().split('T')[0];
-
-// Define os atributos min e max no campo de entrada de data
-dateInput.setAttribute('min', minDateString);
-dateInput.setAttribute('max', maxDateString);
-
-// Outro código presente no arquivo main.js...
