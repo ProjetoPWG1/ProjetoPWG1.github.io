@@ -71,12 +71,12 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Página Inicial</a></li>
+          <li><a href="index.html">Página Inicial</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="servicos.html">Experiências Vínicas</a></li>
           <li><a href="produtos.html">Produtos</a></li>
           <li><a href="contactos.html">Contactos</a></li>
-          <li><a href="carrinho.html"><img src="media/carticon.png" style="width: 35px;"></a></li>
+          <li><a href="carrinho.html" class="active"><img src="media/carticon.png" style="width: 35px;"></a></li>
           
         </ul>
       </nav><!-- .navbar -->
@@ -108,21 +108,25 @@
             <button style="width: 20px; border-radius: 10px; background-color: #9c1111; color: white; border: none;" onclick="remElem1()">X</button>
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="media/Bring-a-Bottle-239751311-1024x683.webp" class="img-fluid" alt="" >
-              <span class="post-date">80€</span>
+              <a href="paginaProduto.html">
+                <img src="Imagem3.jpg" class="img-fluid" alt="" style="margin-left: 90px;">
+              </a>
+              <span class="post-date">50€</span>
+              
             </div>
 
             <div class="post-content d-flex flex-column">
-              <h3 class="post-title">Vinho tinto</h3>
+              <h3 class="post-title">Branco 2015</h3>
 
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                  <span class="ps-2">tinto</span>
+                  <span class="ps-2">Branco</span>
                 </div>
                 <span class="px-3 text-black-50"><i class="bi bi-arrow-right"></i></span>
                 <div class="d-flex align-items-center">
-                  <span class="ps-2">1999</span>
+                  <span class="ps-2">2015</span>
                 </div>
+                
 
               </div>
                   
@@ -135,20 +139,22 @@
           <button style="width: 20px; border-radius: 10px; background-color: #9c1111; color: white; border: none;" onclick="remElem2()">X</button>
 
           <div class="post-img position-relative overflow-hidden">
-            <img src="media/Bring-a-Bottle-239751311-1024x683.webp" class="img-fluid" alt="">
-            <span class="post-date">80€</span>
+            <a href="paginaProduto2.html">
+              <img src="Imagem4.jpg" class="img-fluid" alt="" style="height:300px; margin-left:90px">
+            </a>
+            <span class="post-date">70€</span>
           </div>
 
           <div class="post-content d-flex flex-column">
-            <h3 class="post-title">Vinho verde</h3>
+            <h3 class="post-title">Tinto 2015</h3>
 
             <div class="meta d-flex align-items-center">
               <div class="d-flex align-items-center">
-                <span class="ps-2">verde</span>
+                <span class="ps-2">Tinto</span>
               </div>
               <span class="px-3 text-black-50"><i class="bi bi-arrow-right"></i></span>
               <div class="d-flex align-items-center">
-                <span class="ps-2">1999</span>
+                <span class="ps-2">2015</span>
               </div>
 
             </div>
@@ -162,20 +168,22 @@
         <button style="width: 20px; border-radius: 10px; background-color: #9c1111; color: white; border: none;" onclick="remElem3()">X</button>
 
         <div class="post-img position-relative overflow-hidden">
-          <img src="media/Bring-a-Bottle-239751311-1024x683.webp" class="img-fluid" alt="">
-          <span class="post-date">80€</span>
+          <a href="paginaProduto3.html">
+            <img src="Imagem5.jpg" class="img-fluid" alt="" style="height:300px; margin-left:90px">
+          </a>
+          <span class="post-date">90€</span>
         </div>
 
         <div class="post-content d-flex flex-column">
-          <h3 class="post-title">Vinho branco</h3>
+          <h3 class="post-title">Tinto 2010</h3>
 
           <div class="meta d-flex align-items-center">
             <div class="d-flex align-items-center">
-              <span class="ps-2">branco</span>
+              <span class="ps-2">Tinto</span>
             </div>
             <span class="px-3 text-black-50"><i class="bi bi-arrow-right"></i></span>
             <div class="d-flex align-items-center">
-              <span class="ps-2">1999</span>
+              <span class="ps-2">2010</span>
             </div>
 
           </div>
@@ -195,7 +203,7 @@
       
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
                   <div class="content">
-                    <h3 style="margin-top: -70px;">Total = <span id="total">240</span>€</h3>
+                    <h3 style="margin-top: -70px;">Total = <span id="total">210</span>€</h3>
                     <img src="media/shoppingCart.png" style="height: 400px; margin-left: 90px;">
                   </div>
                 </div>
@@ -364,24 +372,24 @@
 
   <!--Função para remover items do carrinho e dar update aos preços-->
   <script>
-    let total = 241;
+    let total = 211;
     total = total-1;
     function remElem1() {
       var x = document.getElementById("product1");
       x.style.display = "none";
-      total=total-80;
+      total=total-50;
       document.getElementById("total").innerHTML = total;
     } 
     function remElem2() {
       var x = document.getElementById("product2");
       x.style.display = "none";
-      total=total-80;
+      total=total-70;
       document.getElementById("total").innerHTML = total;
     } 
     function remElem3() {
       var x = document.getElementById("product3");
       x.style.display = "none";
-      total=total-80;
+      total=total-90;
       document.getElementById("total").innerHTML = total;
     } 
     function saleAlert(){

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dona Olinda - Degustações</title>
+  <title>[Template] Sample Inner Page</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,17 +37,47 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .proceed{
+      background: var(--color-primary);
+      border: 0;
+      padding: 10px 30px;
+      color:white;
+      transition: 0.4s;
+      border-radius: 4px;
+    }
+
+    .proceed:hover {
+      background: rgba(254, 185, 0, 0.8);
+    }
+
+    th{
+        border:1px solid black;
+        font-size: 40px;
+        background-color: #9c1111;
+        color: white;
+    }
+    td{
+        border:1px solid black;
+        font-size:20px;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        text-align: center;
+    }
+  </style>
+  
 </head>
 
 <body>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="header d-flex align-items-center">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logosmall.svg" alt="">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Dona Olinda<span>.</span></h1>
       </a>
 
@@ -55,12 +85,12 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="index.html" class="active">Página Inicial</a></li>
           <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="servicos.html" class="active">Experiências Vínicas</a></li>
+          <li><a href="servicos.html">Experiências Vínicas</a></li>
           <li><a href="produtos.html">Produtos</a></li>
           <li><a href="contactos.html">Contactos</a></li>
-          <li><a href="carrinho.html"><img src="media/carticon.png" style="width: 35px;"></a></li>
+          <li><a href="carrinho.html"><img src="media/carticon.png" style="width: 35px;" id="logo1"></a></li>
           
         </ul>
       </nav><!-- .navbar -->
@@ -68,108 +98,71 @@
     </div>
   </header><!-- End Header -->
 
-
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url(https://static.portugalbywine.com/media//MULTIMEDIA/FOTOS/2963/6586201728023a_1920.jpg);">
+    <!-- ======= Pagamento ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Degustações</h2>
-        <ol>
-          <li><a href="index.html">Página Inicial</a></li>
-          <li><a href="servicos.html">Experiências Vínicas</a></li>
-          <li>Degustações</li>
-        </ol>
+        <section id="get-started" class="get-started section-bg">
+            <div class="container">
+              
+      
+              <div class="row justify-content-between gy-4">
+      
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+                  <div class="content">
+                    <h3 style="margin-top: -70px;">Branco 2015</h3>
+                    <img src="Imagem3.jpg" style="height: 400px; margin-left: 130px;padding-right:300px;">
+                  </div>
+                </div>
+      
+                <div class="col-lg-5" data-aos="fade">
+                  <form action="forms/quote.php" method="post" class="php-email-form">
+                    
+                    <div class="row gy-3">
+      
+                        <table>
+                            <tr>
+                              <th colspan="2" style="text-align: center;">Detalhes</th>
+                            </tr>
+                            <tr></tr>
+                                <td><b>Nome</b></td>
+                                <td>Branco 2015</td>
+                            <tr></tr>
+                                <td><b>Ano</b></td>
+                                <td>2015</td>
+                            <tr></tr>
+                                <td><b>Tipo</b></td>
+                                <td>Branco</td>
+                            <tr></tr>
+                                <td><b>Região</b></td>
+                                <td>Douro</td>
+                            <tr></tr>
+                                <td><b>Preço</b></td>
+                                <td>50€</td>
+                          </table>
+      
+                      <div class="col-md-12 text-center">
+                        <button class="proceed" onclick="cartAlert(), changeIcon();">Adicionar ao carrinho</button>
+                      </div>
+      
+                    </div>
+                  </form>
+                </div>
+      
+              </div>
+      
+            </div>
+          </section>
 
       </div>
-    </div><!-- End Breadcrumbs -->
+    </div>
 
-    <!-- ======= Alt Services Section 2 ======= -->
-      <!--Texto introdutório-->
-     <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-        <div class="text-center mx-auto" style="max-width: 700px;">
-          <h3 style="font-size: 25px">Descobra o prazer de explorar os aromas, sabores e nuances únicas dos vinhos selecionados.
-            Deixe-se envolver pela paixão do vinho enquanto os nossos especialistas compartilham conhecimentos e curiosidades sobre cada 
-            taça servida.
-          </h3>
-        </div>
-        <br />
-        <div class="container" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-center mx-auto pb-4" style="max-width: 700px;">
-            <h6 class="mb-2">Antes de mais aprenda um pouco sobre como saborear um vinho com a sommelier Teresa Gomes!</h6>
-          </div>  
-          <div style="text-align: center;">
-            <iframe width="760" height="415" src="https://www.youtube.com/embed/2LwtcIh7J4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-
-        </div>
-      </section>
-   
-    <!-- ======= Servie Cards Section ======= -->
-    <section id="services-cards" class="services-cards">
-      <div class="container" data-aos="fade-up">
-        <div class="row gy-2">
-          <h2>HORÁRIOS</h2>
-          <div class="col-lg-3 col-md-6 mx-auto" data-aos="zoom-in" data-aos-delay="100">
-            <h4>Quarta-feira</h4>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check2"></i> <span>Início: 12h00</span></li>
-              <li><i class="bi bi-check2"></i> <span>Duração: 2h30min</span></li>
-              <li><i class="bi bi-check2"></i> <span>Oferta: Almoço</span></li>
-            </ul>
-          </div><!-- End feature item-->
-
-          <div class="col-lg-3 col-md-6 mx-auto" data-aos="zoom-in" data-aos-delay="200">
-            <h4>Quinta-feira</h4>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check2"></i> <span>Início: 12h00</span></li>
-              <li><i class="bi bi-check2"></i> <span>Duração: 2h30min</span></li>
-              <li><i class="bi bi-check2"></i> <span>Oferta: Almoço</span></li>
-            </ul>
-          </div><!-- End feature item-->
-
-          <div class="col-lg-3 col-md-6 mx-auto" data-aos="zoom-in" data-aos-delay="300">
-            <h4>Sábado</h4>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check2"></i> <span>Início: 15h00</span></li>
-              <li><i class="bi bi-check2"></i> <span>Duração: 2h00</span></li>
-              <li><i class="bi bi-check2"></i> <span>Oferta: Lanche</span></li>
-              <li><i class="bi bi-check2"></i> <span>Convidado Especial</span></li>
-            </ul>
-          </div><!-- End feature item-->
-        <p> <strong style="color: var(--color-primary);">Nota:</strong> As reservas são feitas meia hora antes do início da cada sessão na receção da Casa Agrícola Dona Olinda ou uma semana antes 
-          do dia que pretende ir através dos nossos <a href="contactos.html">contactos</a>.</p>
-        </div>
-
-      </div>
-    </section><!-- End Servie Cards Section -->
-
-    <!--Alt Services Section 2 -->
-    <section id="services-details" class="service-details">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-         
-        <div class="row justify-content-around gy-4">
-          <div class="col-lg-5 d-flex flex-column">
-            <h3>Convidado Especial desta semana:</h3>
-            <p> No dia 10 de junho teremos o prazer de ter connosco o celébre enólogo <a href="https://www.anselmomendes.pt/" target="_blank">Anselmo Mendes</a>.</p>  
-            <p> Com uma carreira marcada pela paixão pela viticultura e pela busca constante da excelência, Anselmo Mendes é 
-              reconhecido como um dos maiores talentos da indústria do vinho.
-              Ao longo da sua trajetória, conquistou prestigiosos prêmios e elogios, tanto a nível nacional como internacional, pela
-              sua habilidade em criar vinhos que são verdadeiras expressões do terroir e refletem a sua dedicação incansável em cada garrafa. </p>
-            <p> Junte-se a nós nesta oportunidade única de conhecer e interagir com Anselmo Mendes, um verdadeiro mestre do vinho, no qual poderá
-              explorar a sua visão enológica, aprender sobre as suas técnicas de vinificação e descobrir os segredos por trás dos seus vinhos premiados.</p>       
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-              <img src="https://www.anselmomendes.pt/img/anselmo-mendes.jpg" alt="Anselmo Mendes">
-          </div>
-      </div>
-    </section><!-- End Alt Services Section 2 -->
+    
 
   </main>
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
@@ -196,18 +189,18 @@
           </div><!-- End footer info column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Links úteis</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="#">Página inicial</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Serviços</a></li>
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+            <h4>Serviços</h4>
             <ul>
               <li><a href="#">Web Design</a></li>
               <li><a href="#">Web Development</a></li>
@@ -246,7 +239,7 @@
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Dona Olinda</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
@@ -278,6 +271,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function cartAlert(){
+      alert("Produto adicionado ao carrinho com sucesso!");
+    }
+    function changeIcon(){
+        var image = document.getElementById('logo1');
+        image.src="logo2.png"
+    }
+  </script>
 
 </body>
 
