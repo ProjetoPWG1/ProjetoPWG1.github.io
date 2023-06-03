@@ -51,6 +51,20 @@
     .proceed:hover {
       background: rgba(254, 185, 0, 0.8);
     }
+
+    th{
+        border:1px solid black;
+        font-size: 40px;
+        background-color: #9c1111;
+        color: white;
+    }
+    td{
+        border:1px solid black;
+        font-size:20px;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        text-align: center;
+    }
   </style>
   
 </head>
@@ -76,7 +90,7 @@
           <li><a href="servicos.html">Experiências Vínicas</a></li>
           <li><a href="produtos.html">Produtos</a></li>
           <li><a href="contactos.html">Contactos</a></li>
-          <li><a href="carrinho.html"><img src="media/carticon.png" style="width: 35px;"></a></li>
+          <li><a href="carrinho.html"><img src="media/carticon.png" style="width: 35px;" id="logo1"></a></li>
           
         </ul>
       </nav><!-- .navbar -->
@@ -92,157 +106,45 @@
 
         <section id="get-started" class="get-started section-bg">
             <div class="container">
-              <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
-      <div class="container" data-aos="fade-up">
-
-    
-    
-  <div class="section-header">
-        <h2 style="color:#9c1111; margin-top:-90px;">Carrinho</h2>
-      </div>
-
-      <div class="row gy-5">
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100"  id="product1">
-          <div class="post-item position-relative h-100">
-            <button style="width: 20px; border-radius: 10px; background-color: #9c1111; color: white; border: none;" onclick="remElem1()">X</button>
-
-            <div class="post-img position-relative overflow-hidden">
-              <a href="paginaProduto.html">
-                <img src="Imagem3.jpg" class="img-fluid" alt="" style="margin-left: 90px;">
-              </a>
-              <span class="post-date">50€</span>
               
-            </div>
-
-            <div class="post-content d-flex flex-column">
-              <h3 class="post-title">Branco 2015</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <span class="ps-2">Branco</span>
-                </div>
-                <span class="px-3 text-black-50"><i class="bi bi-arrow-right"></i></span>
-                <div class="d-flex align-items-center">
-                  <span class="ps-2">2015</span>
-                </div>
-                
-
-              </div>
-                  
-              </div>
-          </div>
-      </div><!-- End post item -->
-
-      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100"  id="product2">
-        <div class="post-item position-relative h-100">
-          <button style="width: 20px; border-radius: 10px; background-color: #9c1111; color: white; border: none;" onclick="remElem2()">X</button>
-
-          <div class="post-img position-relative overflow-hidden">
-            <a href="paginaProduto2.html">
-              <img src="Imagem4.jpg" class="img-fluid" alt="" style="height:300px; margin-left:90px">
-            </a>
-            <span class="post-date">70€</span>
-          </div>
-
-          <div class="post-content d-flex flex-column">
-            <h3 class="post-title">Tinto 2015</h3>
-
-            <div class="meta d-flex align-items-center">
-              <div class="d-flex align-items-center">
-                <span class="ps-2">Tinto</span>
-              </div>
-              <span class="px-3 text-black-50"><i class="bi bi-arrow-right"></i></span>
-              <div class="d-flex align-items-center">
-                <span class="ps-2">2015</span>
-              </div>
-
-            </div>
-                
-            </div>
-        </div>
-    </div><!-- End post item -->
-
-    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100"  id="product3">
-      <div class="post-item position-relative h-100">
-        <button style="width: 20px; border-radius: 10px; background-color: #9c1111; color: white; border: none;" onclick="remElem3()">X</button>
-
-        <div class="post-img position-relative overflow-hidden">
-          <a href="paginaProduto3.html">
-            <img src="Imagem5.jpg" class="img-fluid" alt="" style="height:300px; margin-left:90px">
-          </a>
-          <span class="post-date">90€</span>
-        </div>
-
-        <div class="post-content d-flex flex-column">
-          <h3 class="post-title">Tinto 2010</h3>
-
-          <div class="meta d-flex align-items-center">
-            <div class="d-flex align-items-center">
-              <span class="ps-2">Tinto</span>
-            </div>
-            <span class="px-3 text-black-50"><i class="bi bi-arrow-right"></i></span>
-            <div class="d-flex align-items-center">
-              <span class="ps-2">2010</span>
-            </div>
-
-          </div>
-              
-          </div>
-      </div>
-  </div><!-- End post item -->
-
-      </div>
-
-      </div>
-    </section>
-    <!-- End Recent Blog Posts Section -->
-
       
               <div class="row justify-content-between gy-4">
       
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
                   <div class="content">
-                    <h3 style="margin-top: -70px;">Total = <span id="total">210</span>€</h3>
-                    <img src="media/shoppingCart.png" style="height: 400px; margin-left: 90px;">
+                    <h3 style="margin-top: -70px;">Branco 2015</h3>
+                    <img src="Imagem3.jpg" style="height: 400px; margin-left: 130px;padding-right:300px;">
                   </div>
                 </div>
       
                 <div class="col-lg-5" data-aos="fade">
                   <form action="forms/quote.php" method="post" class="php-email-form">
-                    <h3>Inserir informações de pagamento</h3>
                     
                     <div class="row gy-3">
       
-                      <div class="col-md-12">
-                        <input type="text" name="name" class="form-control" placeholder="Nome" required>
-                      </div>
-      
-                      <div class="col-md-12 ">
-                        <input type="email" class="form-control" name="email" placeholder="Email" required>
-                      </div>
-      
-                      <div class="col-md-12">
-                        <input type="text" class="form-control" name="phone" placeholder="Tlm" required>
-                      </div>
-                    
-                      <div class="dropdown">
-                        <form>
-                          Selecionar método de pagamento:
-                          <select id="mySelect">
-                            <option value="Paypal">Paypal</option>
-                            <option value="Visa">Visa</option>
-                            <option value="Mastercard">Mastercard</option>
-                          </select>
-                        </form>
-                      </div>
+                        <table>
+                            <tr>
+                              <th colspan="2" style="text-align: center;">Detalhes</th>
+                            </tr>
+                            <tr></tr>
+                                <td><b>Nome</b></td>
+                                <td>Branco 2015</td>
+                            <tr></tr>
+                                <td><b>Ano</b></td>
+                                <td>2015</td>
+                            <tr></tr>
+                                <td><b>Tipo</b></td>
+                                <td>Branco</td>
+                            <tr></tr>
+                                <td><b>Região</b></td>
+                                <td>Douro</td>
+                            <tr></tr>
+                                <td><b>Preço</b></td>
+                                <td>50€</td>
+                          </table>
       
                       <div class="col-md-12 text-center">
-                        <div class="loading">Loading</div>
-                        
-                        <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-      
-                        <button class="proceed" onclick="saleAlert()">Proceder</button>
+                        <button class="proceed" onclick="cartAlert(), changeIcon();">Adicionar ao carrinho</button>
                       </div>
       
                     </div>
@@ -370,32 +272,16 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!--Função para remover items do carrinho e dar update aos preços-->
   <script>
-    let total = 211;
-    total = total-1;
-    function remElem1() {
-      var x = document.getElementById("product1");
-      x.style.display = "none";
-      total=total-50;
-      document.getElementById("total").innerHTML = total;
-    } 
-    function remElem2() {
-      var x = document.getElementById("product2");
-      x.style.display = "none";
-      total=total-70;
-      document.getElementById("total").innerHTML = total;
-    } 
-    function remElem3() {
-      var x = document.getElementById("product3");
-      x.style.display = "none";
-      total=total-90;
-      document.getElementById("total").innerHTML = total;
-    } 
-    function saleAlert(){
-      alert("A venda de álcool é proibida a menores de 18 anos");
+    function cartAlert(){
+      alert("Produto adicionado ao carrinho com sucesso!");
+    }
+    function changeIcon(){
+        var image = document.getElementById('logo1');
+        image.src="logo2.png"
     }
   </script>
+
 </body>
 
 </html>
