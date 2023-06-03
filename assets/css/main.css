@@ -648,7 +648,7 @@ section {
 
 .get-started .php-email-form .loading {
   display: none;
-  background: #c18787;
+  background: #ece7e7;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -662,7 +662,7 @@ section {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #059652;
-  border-top-color: #c18787;
+  border-top-color: #e2dcdc;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -692,13 +692,13 @@ section {
   background: var(--color-primary);
   border: 0;
   padding: 10px 30px;
-  color:#c18787;
+  color:rgb(255, 255, 255);
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(114, 111, 102, 0.8);
+  background:  rgba(117, 108, 108, 0.8);;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1089,13 +1089,13 @@ section {
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: var(--color-primary);
   margin: 0 1px;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #ffd565;
+  color: var(--color-primary);
   font-size: 26px;
   line-height: 0;
 }
@@ -1242,7 +1242,7 @@ section {
 }
 
 .alt-services .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background:  rgba(117, 108, 108, 0.8);;
 }
 /*--------------------------------------------------------------
 # About Section
@@ -1824,7 +1824,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background:  rgba(117, 108, 108, 0.8);;
 }
 
 @keyframes animate-loading {
@@ -2034,7 +2034,7 @@ section {
   background: none;
   font-size: 26px;
   line-height: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(225, 224, 224, 0.2);
   color: rgba(255, 255, 255, 0.6);
   border-radius: 50px;
   width: 54px;
