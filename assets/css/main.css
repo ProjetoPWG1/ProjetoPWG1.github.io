@@ -769,6 +769,7 @@ section {
   background: #fff;
   position: relative;
   border-radius: 0;
+  height:600px
 }
 
 .constructions .card-item .card-bg {
