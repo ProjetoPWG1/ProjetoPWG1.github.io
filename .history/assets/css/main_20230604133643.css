@@ -2099,7 +2099,109 @@ section {
 .hero .carousel-control-next:hover {
   opacity: 0.9;
 }
+/*--------------------------------------------------------------
+# Hero2 Section
+--------------------------------------------------------------*/
+.hero2 {
+  overflow-x: hidden;
+  padding: 0;
+}
 
+.hero2 .carousel {
+  width: 800px;
+  width: 800px;
+  padding: 20px 0;
+  margin: 0;
+  position: relative;
+}
+
+.hero2 .carousel-item {
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+
+.hero2 .carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.hero2 .info {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero .info {
+    padding: 0 50px;
+  }
+}
+
+
+@media (max-width: 60px) {
+  .hero2 .info h2 {
+    font-size: 36px;
+  }
+}
+
+
+.hero2 .carousel-control-prev {
+  justify-content: start;
+}
+
+@media (min-width: 640px) {
+  .hero2 .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+.hero2 .carousel-control-next {
+  justify-content: end;
+}
+
+@media (min-width: 640px) {
+  .hero2 .carousel-control-next {
+    padding-right: 15px;
+  }
+}
+
+.hero2 .carousel-control-next-icon,
+.hero2 .carousel-control-prev-icon {
+  background: none;
+  font-size: 26px;
+  line-height: 0;
+  background: rgba(225, 224, 224, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero2 .carousel-control-prev,
+.hero2 .carousel-control-next {
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.hero2 .carousel-control-prev:focus,
+.hero2 .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.hero2 .carousel-control-prev:hover,
+.hero2 .carousel-control-next:hover {
+  opacity: 0.9;
+}
 
 /*--------------------------------------------------------------
 # Blog
