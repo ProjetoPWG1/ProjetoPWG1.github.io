@@ -78,12 +78,16 @@ h6 {
   }
 
   .aboutgifs img {
+    width: 50%; /* Adjust the width as needed */
     object-fit: cover;
-    padding: 5px; 
-    Border-radius: 8px;
-    margin: 0 0 10px 15px;
-    overflow: hidden;
+    padding: 5px; /* Add padding between the images */
+    Border-radius: 4px;
+    margin-left: 20 px;
+    margin-right: 20px;
+    position: relative;
     height: 50 px;
+    width: auto;
+
   }
 
 
@@ -2099,7 +2103,6 @@ section {
 .hero .carousel-control-next:hover {
   opacity: 0.9;
 }
-
 
 /*--------------------------------------------------------------
 # Blog

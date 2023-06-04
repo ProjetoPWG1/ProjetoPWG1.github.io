@@ -74,18 +74,16 @@ h6 {
   }
 
   .aboutgifs {
-    display: flex;
-  }
-
-  .aboutgifs img {
-    object-fit: cover;
-    padding: 5px; 
-    Border-radius: 8px;
-    margin: 0 0 10px 15px;
-    overflow: hidden;
-    height: 50 px;
-  }
-
+  outline: #9c1111;
+  outline-style:double;
+  padding: 25px;
+  margin: 0 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  height: 50 px;
+  width: auto;
+}
 
 .hover-box {
   position: relative;
@@ -2099,7 +2097,6 @@ section {
 .hero .carousel-control-next:hover {
   opacity: 0.9;
 }
-
 
 /*--------------------------------------------------------------
 # Blog

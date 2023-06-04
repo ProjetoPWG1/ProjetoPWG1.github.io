@@ -73,58 +73,39 @@ h6 {
     width: 100px;
   }
 
-  .aboutgifs {
-    display: flex;
-  }
-
-  .aboutgifs img {
-    object-fit: cover;
-    padding: 5px; 
-    Border-radius: 8px;
-    margin: 0 0 10px 15px;
-    overflow: hidden;
-    height: 50 px;
-  }
-
+.sobre .aboutgifs {
+  outline: #9c1111;
+  outline-style:double;
+  padding: 25px;
+  margin: 0 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
 
 .hover-box {
-  position: relative;
+  position: below;
   display: inline-block;
 }
 
-/*--------------------------------------------------------------
-# texto hover na secção sobre
---------------------------------------------------------------*/
 .hover-box:hover .hover-text {
   visibility: visible;
+}
+
+.hover-box:hover {
+  color: rgb(0, 0, 0); 
 }
 
 .hover-text {
   visibility: hidden;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8); 
-  color: #fff;
+  background-color:rgba(45, 42, 37, 0.069);
+  color: #5d1111;
   padding: 5px;
-  border-radius: 3px;
-  top: 20px;
-  left: 0;
   width: 150px;
   text-align: center;
-  z-index: 1;
 }
 
-.sobrebutton {
-  background-color: darkred;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  padding: 10px 20px;
-  font-family: var(--font-secondary);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -2099,7 +2080,6 @@ section {
 .hero .carousel-control-next:hover {
   opacity: 0.9;
 }
-
 
 /*--------------------------------------------------------------
 # Blog
