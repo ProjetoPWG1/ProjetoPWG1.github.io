@@ -1,7 +1,5 @@
 /**
 * Template Name: UpConstruction - v1.3.0
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
 
@@ -72,13 +70,6 @@ h6 {
     height: 100px;
     width: 100px;
   }
-
-.aboutgifs :{
-  outline: #9c1111;
-  outline-style:double;
-  border-radius:80%;
-  padding: 25px;
-}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
