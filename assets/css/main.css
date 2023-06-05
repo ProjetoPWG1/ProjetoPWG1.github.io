@@ -72,29 +72,18 @@ h6 {
     height: 100px;
     width: 100px;
   }
-
-  .aboutgifs {
-    display: flex;
-  }
-
-  .aboutgifs img {
-    object-fit: cover;
-    padding: 5px; 
-    Border-radius: 8px;
-    margin: 0 0 10px 15px;
-    overflow: hidden;
-    height: 50 px;
-  }
+  
 
 
+/*--------------------------------------------------------------
+# texto hover na secção sobre
+--------------------------------------------------------------*/
 .hover-box {
   position: relative;
   display: inline-block;
 }
 
-/*--------------------------------------------------------------
-# texto hover na secção sobre
---------------------------------------------------------------*/
+
 .hover-box:hover .hover-text {
   visibility: visible;
 }
@@ -103,9 +92,10 @@ h6 {
   visibility: hidden;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8); 
+  font-family: var(--font-secondary);
+  font-size: small;
   color: #fff;
   padding: 5px;
-  border-radius: 3px;
   top: 20px;
   left: 0;
   width: 150px;
